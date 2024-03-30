@@ -57,6 +57,8 @@ def read_csv(file):
 
 # 명단 불러오기
 interview_list = read_csv(list_csv)
+print(f"총 {len(interview_list)}명의 명단 불러오기 완료")
+
 # 명단에 있는 사람(데이터) 각각에게 이메일 발송
 for data in interview_list:
     # 데이터가 잘못된 경우 건너뜁니다.
